@@ -25,9 +25,9 @@ function App() {
       <hr/>
       {(sessionStorage.getItem("isLoggedIn") === true) ? null : <Redirect to="/todo-list-with-login/login"></Redirect>}
       <Route path="/todo-list-with-login/" exact component={Login}/>
-      <Route path="/todo-list-with-login/register" component={Register}/>
-      <Route path="/todo-list-with-login/login" component={Login}/>
-      <Route path="/todo-list-with-login/todo" component={AddTask}/>
+      <Route path="/todo-list-with-login/register" exact component={Register}/>
+      <Route path="/todo-list-with-login/login" exact component={Login}/>
+      <Route path="/todo-list-with-login/todo" exact component={AddTask}/>
       </Router>
     </div>
     </>

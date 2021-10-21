@@ -30,7 +30,7 @@ export default function Login() {
     return (
         <div>
             <h3>Login</h3>
-            {(sessionStorage.getItem("isLoggedIn")) ? <Redirect to="/todo"></Redirect> : null}
+            {(sessionStorage.getItem("isLoggedIn")) ? <Redirect to="/todo-list-with-login/todo"></Redirect> : null}
             <input placeholder="username" type="text" ref={username}></input>
             <br/>
             <input placeholder="password" type="password" ref={password}></input>

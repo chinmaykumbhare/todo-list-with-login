@@ -37,7 +37,7 @@ export default function Register() {
             {(passVal === cpassVal) ? null : <h5 style={{color: "orange", marginBottom: "-15px",
             marginTop: "10px"}}>Passwords do not match</h5>}
             <br/>
-            <Link to="/login" style={{fontSize: "20px", color: "white", float: "left"}}>Login Here</Link>
+            <Link to="/todo-list-with-login/login" style={{fontSize: "20px", color: "white", float: "left"}}>Login Here</Link>
             {(passVal === cpassVal) && <button style={{width: "auto", float: "right"}} onClick={validate}>Register</button>}
         </div>
     )
