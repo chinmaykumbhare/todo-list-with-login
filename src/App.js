@@ -12,7 +12,7 @@ function App() {
   const logout = () => {
     sessionStorage.removeItem("isLoggedIn");
     sessionStorage.removeItem("name");
-    window.location.reload();
+    window.location.replace("todo-list-with-login/");
   }
 
   return (

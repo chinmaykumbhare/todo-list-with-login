@@ -24,7 +24,7 @@ export default function Login() {
             }
             else sessionStorage.setItem("isLoggedIn", false);
         })
-        window.location.reload();
+        window.location.replace("todo-list-with-login/");
     }
 
     return (

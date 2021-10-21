@@ -17,7 +17,7 @@ export default function Register() {
         let obj = {username: username.current.value, password: password.current.value};
         console.log(obj);
         axios.post(URL, obj);
-        window.location.reload();
+        window.location.replace("todo-list-with-login/");
     }
 
     const setVal = (event) => {
