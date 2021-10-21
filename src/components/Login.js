@@ -35,7 +35,7 @@ export default function Login() {
             <br/>
             <input placeholder="password" type="password" ref={password}></input>
             <br/>
-            <Link to="/register" style={{fontSize: "20px", color: "white", marginTop: "10px", float: "left"}}>Register Here</Link>
+            <Link to="/todo-list-with-login/register" style={{fontSize: "20px", color: "white", marginTop: "10px", float: "left"}}>Register Here</Link>
             <button style={{width: "auto", float: "right", marginTop: "5px"}} onClick={validate}>Login</button>
         </div>
     )

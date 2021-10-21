@@ -23,11 +23,11 @@ function App() {
       {sessionStorage.getItem("name") && <h5>Hello, {sessionStorage.getItem("name")}</h5>}
       {sessionStorage.getItem("isLoggedIn") && <button style={{width: "auto"}} onClick={logout}>Logout</button>}
       <hr/>
-      {(sessionStorage.getItem("isLoggedIn") === true) ? null : <Redirect to="/login"></Redirect>}
-      <Route path="/" exact component={Login}/>
-      <Route path="/register" component={Register}/>
-      <Route path="/login" component={Login}/>
-      <Route path="/todo" component={AddTask}/>
+      {(sessionStorage.getItem("isLoggedIn") === true) ? null : <Redirect to="/todo-list-with-login/login"></Redirect>}
+      <Route path="/todo-list-with-login/" exact component={Login}/>
+      <Route path="/todo-list-with-login/register" component={Register}/>
+      <Route path="/todo-list-with-login/login" component={Login}/>
+      <Route path="/todo-list-with-login/todo" component={AddTask}/>
       </Router>
     </div>
     </>
